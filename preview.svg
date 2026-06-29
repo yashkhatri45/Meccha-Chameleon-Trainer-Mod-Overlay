@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120818"/>
+      <stop offset="45%" stop-color="#1f0f2e"/>
+      <stop offset="100%" stop-color="#0d1824"/>
+    </linearGradient>
+
+    <linearGradient id="slash" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff2d9b" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#ff2d9b" stop-opacity="0.85"/>
+      <stop offset="38%" stop-color="#ffe566" stop-opacity="0.9"/>
+      <stop offset="58%" stop-color="#5dff4a" stop-opacity="0.85"/>
+      <stop offset="78%" stop-color="#2de8ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#c77dff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="titleFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#ffe566"/>
+      <stop offset="65%" stop-color="#5dff4a"/>
+      <stop offset="100%" stop-color="#2de8ff"/>
+    </linearGradient>
+
+    <linearGradient id="badge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff2d9b"/>
+      <stop offset="50%" stop-color="#ff6b1a"/>
+      <stop offset="100%" stop-color="#ffd24a"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="drop">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+
+    <filter id="hardShadow">
+      <feDropShadow dx="4" dy="5" stdDeviation="0" flood-color="#000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1500" height="500" fill="url(#bg)"/>
+
+  <!-- paint splatters -->
+  <circle cx="180" cy="420" r="110" fill="#ff2d9b" opacity="0.08"/>
+  <circle cx="420" cy="80" r="90" fill="#2de8ff" opacity="0.07"/>
+  <circle cx="980" cy="430" r="130" fill="#5dff4a" opacity="0.06"/>
+  <circle cx="1320" cy="120" r="85" fill="#ffe566" opacity="0.08"/>
+  <ellipse cx="760" cy="250" rx="220" ry="140" fill="#c77dff" opacity="0.04"/>
+
+  <!-- diagonal accent -->
+  <path d="M -40 520 L 420 -40 L 520 40 L 60 600 Z" fill="url(#slash)" opacity="0.35"/>
+  <path d="M 1180 -20 L 1560 360 L 1500 420 L 1120 40 Z" fill="url(#slash)" opacity="0.22"/>
+
+  <!-- grid dots -->
+  <g opacity="0.12" fill="#ffffff">
+    <circle cx="60" cy="60" r="2"/><circle cx="100" cy="60" r="2"/><circle cx="140" cy="60" r="2"/>
+    <circle cx="60" cy="100" r="2"/><circle cx="100" cy="100" r="2"/><circle cx="140" cy="100" r="2"/>
+    <circle cx="1360" cy="380" r="2"/><circle cx="1400" cy="380" r="2"/><circle cx="1440" cy="380" r="2"/>
+    <circle cx="1360" cy="420" r="2"/><circle cx="1400" cy="420" r="2"/><circle cx="1440" cy="420" r="2"/>
+  </g>
+
+  <!-- title block -->
+  <g transform="translate(72, 86)" filter="url(#hardShadow)">
+    <text y="0" font-family="Impact, Arial Black, sans-serif" font-size="132" font-weight="900" letter-spacing="6" fill="#000" opacity="0.55">
+      <tspan x="0" dy="132">MECCHA</tspan>
+      <tspan x="0" dy="118">CHAMELEON</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(68, 82)" filter="url(#glow)">
+    <text y="0" font-family="Impact, Arial Black, sans-serif" font-size="132" font-weight="900" letter-spacing="6" fill="url(#titleFill)">
+      <tspan x="0" dy="132">MECCHA</tspan>
+      <tspan x="0" dy="118">CHAMELEON</tspan>
+    </text>
+  </g>
+
+  <!-- trainer badge -->
+  <g transform="translate(72, 348)">
+    <rect x="0" y="0" width="430" height="54" rx="8" fill="url(#badge)" filter="url(#drop)"/>
+    <rect x="2" y="2" width="426" height="50" rx="7" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+    <text x="215" y="37" text-anchor="middle" font-family="Segoe UI, Arial Black, sans-serif" font-size="28" font-weight="800" letter-spacing="4" fill="#120818">GAME TRAINER</text>
+  </g>
+
+  <!-- tagline -->
+  <text x="72" y="448" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#b8afc8">Paint. Hide. Win. — hide-and-seek companion overlay for Windows</text>
+
+  <!-- chameleon mascot -->
+  <g transform="translate(1080, 48)" filter="url(#drop)">
+    <!-- tail curl -->
+    <path d="M 260 300 C 340 320 380 250 330 190 C 290 145 220 150 200 210" fill="none" stroke="#5dff4a" stroke-width="18" stroke-linecap="round" opacity="0.85"/>
+    <path d="M 200 210 C 175 250 120 240 95 190" fill="none" stroke="#2de8ff" stroke-width="14" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- body -->
+    <ellipse cx="170" cy="250" rx="95" ry="70" fill="#f4f4f4"/>
+    <ellipse cx="170" cy="250" rx="95" ry="70" fill="url(#slash)" opacity="0.28"/>
+
+    <!-- head -->
+    <circle cx="95" cy="185" r="58" fill="#f4f4f4"/>
+    <circle cx="95" cy="185" r="58" fill="#ff2d9b" opacity="0.12"/>
+
+    <!-- eye -->
+    <circle cx="118" cy="172" r="22" fill="#ffffff"/>
+    <circle cx="124" cy="172" r="12" fill="#120818"/>
+    <circle cx="128" cy="168" r="4" fill="#ffffff"/>
+
+    <!-- crest -->
+    <path d="M 52 145 Q 40 110 58 95 Q 72 115 68 140" fill="#5dff4a"/>
+    <path d="M 68 138 Q 78 105 92 92 Q 98 118 88 145" fill="#2de8ff"/>
+    <path d="M 88 142 Q 98 108 118 98 Q 118 125 108 150" fill="#ffe566"/>
+
+    <!-- smile -->
+    <path d="M 78 205 Q 95 220 112 205" fill="none" stroke="#120818" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- legs -->
+    <rect x="118" y="300" width="16" height="42" rx="8" fill="#f4f4f4"/>
+    <rect x="148" y="305" width="16" height="38" rx="8" fill="#f4f4f4"/>
+    <rect x="178" y="300" width="16" height="42" rx="8" fill="#f4f4f4"/>
+    <rect x="208" y="308" width="16" height="34" rx="8" fill="#f4f4f4"/>
+
+    <!-- paint dots on body -->
+    <circle cx="145" cy="230" r="12" fill="#ff2d9b" opacity="0.75"/>
+    <circle cx="190" cy="245" r="10" fill="#2de8ff" opacity="0.7"/>
+    <circle cx="215" cy="220" r="9" fill="#ffe566" opacity="0.75"/>
+    <circle cx="160" cy="270" r="8" fill="#5dff4a" opacity="0.7"/>
+
+    <!-- brush -->
+    <rect x="248" y="118" width="14" height="78" rx="4" fill="#8b5a2b"/>
+    <rect x="236" y="188" width="38" height="22" rx="6" fill="#120818"/>
+    <path d="M 236 200 Q 220 215 228 228 Q 248 222 255 205" fill="#ff2d9b"/>
+    <path d="M 248 205 Q 262 218 255 232 Q 238 228 236 210" fill="#2de8ff"/>
+  </g>
+
+  <!-- corner badge -->
+  <g transform="translate(1320, 36)">
+    <rect width="148" height="34" rx="17" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/>
+    <text x="74" y="22" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#d8d0e4">STEAM · 4704690</text>
+  </g>
+</svg>
